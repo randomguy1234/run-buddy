@@ -1,0 +1,44 @@
+/*remove default padding and margins from html*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*give header some flare*/
+header{
+    padding: 20px 35px;
+    background-color: #39a6b2;
+}
+
+/*add style to h1 in header*/
+header h1{
+    font-weight: bold;
+    font-size: 36px;
+    color: #fce138;
+    margin: 0;
+    display: inline;
+}
+
+/*give flare to a elements in header*/
+header a{
+    text-decoration: none; /*remove the auto-underline for links here*/
+    color: #fce138;
+}
+
+/*add style to the nav element in header*/
+header nav{
+    float: right;
+    margin: 7px 0;
+}
+
+/*give flare to list item within ul inside nav in header*/
+header nav ul li{
+    display: inline; /*puts the list items all on the same line*/
+}
+
+/*add style to a inside nav element*/
+header nav ul li a{
+    margin: 0 30px;
+    font-weight: lighter;
+    font-size: 22px;
+}
