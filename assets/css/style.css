@@ -2,6 +2,13 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/*body needed color change*/
+body{
+    color: #39a6b2;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 /*give header some flare*/
@@ -41,4 +48,31 @@ header nav ul li a{
     margin: 0 30px;
     font-weight: lighter;
     font-size: 22px;
+}
+
+/*enhance the look of the footer*/
+footer{
+    background: #fce138;
+    width: 100%;
+    padding: 40px 35px;
+}
+
+/*enhance the appearance of the h2 in footer*/
+footer h2{
+    display: inline;
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+}
+
+/*format the div in footer*/
+footer div{
+    float: right;
+    line-height: 1.5;
+    text-align: right;
+}
+
+/*format the a elements in footer*/
+footer a{
+    color: #024e76;
 }
