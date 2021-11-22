@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang= "en">
     <head>
         <!--this gives the widest range of characters available-->
-        <meta charset="UTF-8" />
+        <meta charset= "UTF-8" />
         <title>Run Buddy</title>
         
         <!--link to CSS file-->
-        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel= "stylesheet" href= "./assets/css/style.css">
     </head>
     <body>
         
         <!-- navigation-->
         <header>
             <h1>
-                <a href="/">RUN BUDDY</a>
+                <a href= "/">RUN BUDDY</a>
             </h1>
             <nav>
                 <!--unordered list-->
@@ -21,16 +21,16 @@
                     <!--list item-->
                     <li>
                         <!--anchor-->
-                        <a href="#what-we-do">What We Do</a>
+                        <a href= "#what-we-do">What We Do</a>
                     </li>
                     <li>
                         <a href="#what-you-do">What You Do</a>
                     </li>
                     <li>
-                        <a href="#your-trainers">Your Trainers</a>
+                        <a href= "#your-trainers">Your Trainers</a>
                     </li>
                     <li>
-                        <a href="#reach-out">Reach Out</a>
+                        <a href= "#reach-out">Reach Out</a>
                     </li>
                 </ul>
             </nav>
@@ -38,7 +38,50 @@
 
         <!--hero/jumbotron-->
         <section>
+            <div>
+                <h3>Get Started Today</h3>
+                <p>Fill out this form and one of our trainers will 
+                    schedule a consult</p>
 
+                <!--form starts here-->
+                <form>
+                    <!--ask for name, email, phone; for must match id-->
+                    <label for= "name">Enter Full Name</label>
+                    <input type= "text" placeholder= "Your Name"
+                        name= "name" id= "name" />
+                    
+                    <label for= "email">Enter Email Address</label>
+                    <input type= "email" placeholder= "Email Address"
+                        name= "email" id= "email" />
+                        
+                    <label for= "phone">Enter a Telephone Number</label>
+                    <input type= "tel" placeholder= "Phone Number"
+                        name= "phone" id= "phone" />
+                    
+                    <!--ask Y/N about workout with trainer-->    
+                    <p>
+                        Have you worked out with a trainer before?
+                        <input type= "radio" name= "trainer-confirm"
+                            id= "trainer-yes" />
+                        <label for= "trainer-yes">Yes</label>
+                        <input type= "radio" name= "trainer-confirm"
+                            id= "trainer-no" />
+                        <label for= "trainer-no">No</label>        
+                    </p>
+                    
+                    <!--confirm for 18+ years-->
+                    <label for= "age">
+                        <p> I acknowledge that I am at least 
+                            18 years of age.</p>
+                    </label>
+                    <input type= "checkbox" name= "age-confirm" id= "age" />
+
+                    <!--submit button-->
+                    <button type= "submit">
+                        Get Running!
+                    </button>
+                </form>
+            </div>
         </section>
 
         <!--"what we do" section-->
