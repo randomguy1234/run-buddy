@@ -37,8 +37,8 @@
         </header>
 
         <!--hero/jumbotron-->
-        <section>
-            <div>
+        <section class= "hero">
+            <div class= "hero-form">
                 <h3>Get Started Today</h3>
                 <p>Fill out this form and one of our trainers will 
                     schedule a consult</p>
@@ -48,15 +48,15 @@
                     <!--ask for name, email, phone; for must match id-->
                     <label for= "name">Enter Full Name</label>
                     <input type= "text" placeholder= "Your Name"
-                        name= "name" id= "name" />
+                        name= "name" id= "name" class= "form-input" />
                     
                     <label for= "email">Enter Email Address</label>
                     <input type= "email" placeholder= "Email Address"
-                        name= "email" id= "email" />
+                        name= "email" id= "email" class= "form-input" />
                         
                     <label for= "phone">Enter a Telephone Number</label>
                     <input type= "tel" placeholder= "Phone Number"
-                        name= "phone" id= "phone" />
+                        name= "phone" id= "phone" class= "form-input" />
                     
                     <!--ask Y/N about workout with trainer-->    
                     <p>
@@ -71,10 +71,13 @@
                     
                     <!--confirm for 18+ years-->
                     <label for= "age">
-                        <p> I acknowledge that I am at least 
-                            18 years of age.</p>
+                        <p> 
+                            I acknowledge that I am at least 18 years of age.
+                            <input type= "checkbox" name= "age-confirm" id= "age" /> 
+                            <!--moved input in p element in order to align it next to text-->
+                        </p>
                     </label>
-                    <input type= "checkbox" name= "age-confirm" id= "age" />
+                    
 
                     <!--submit button-->
                     <button type= "submit">

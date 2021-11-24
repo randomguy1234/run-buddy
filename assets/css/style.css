@@ -50,6 +50,7 @@ header nav ul li a{
     font-size: 22px;
 }
 
+
 /*enhance the look of the footer*/
 footer{
     background: #fce138;
@@ -75,4 +76,67 @@ footer div{
 /*format the a elements in footer*/
 footer a{
     color: #024e76;
+}
+
+
+/*make the sections prettier*/
+section{
+    padding: 60px;
+}
+
+/*make the hero shine*/
+.hero{
+    background-image: url("../images/hero-bg.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+/*make the hero form prettier*/
+.hero-form{
+    color: #024e76;
+    background-color: #fce138;
+    padding: 20px;
+    width: 500px;
+    border: solid 3px #024e76;
+    position: absolute;
+    bottom: 120px;
+    right: 140px;
+}
+
+/*make the form header look better*/
+.hero-form h3{
+    margin: 0px;
+    font-size: 24px;
+}
+
+/*clean up the p elements in the form*/
+.hero form p{
+    margin: 5px 0 15px 0;
+}
+
+/*improve the look of the input button*/
+.form-input{
+    border: 1px solid #024e76;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #024e76;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/*make the labels more readable on the site*/
+.hero-form label{
+    margin: 0 5px;
+}
+
+/*make the button more colorful*/
+.hero-form button{
+    color: #fce138;
+    background-color: #024e76;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
 }
