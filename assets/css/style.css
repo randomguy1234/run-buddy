@@ -1,4 +1,4 @@
-/*remove default padding and margins from html*/
+/*remove default padding and margins from html, * means everything.*/
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +11,9 @@ body{
     font-family: Helvetica, Arial, sans-serif;
 }
 
-/*give header some flare*/
+
+
+/*give main header some flare*/
 header{
     padding: 20px 35px;
     background-color: #39a6b2;
@@ -51,6 +53,7 @@ header nav ul li a{
 }
 
 
+
 /*enhance the look of the footer*/
 footer{
     background: #fce138;
@@ -79,10 +82,14 @@ footer a{
 }
 
 
-/*make the sections prettier*/
+
+/*make all the sections prettier*/
 section{
     padding: 60px;
 }
+
+
+
 
 /*make the hero shine*/
 .hero{
@@ -142,20 +149,28 @@ section{
 }
 
 
+
+/*format all sections all at once*/
+.section-title{
+    font-size: 55px;
+    color: #024e76;
+    margin-bottom: 35px;
+    padding: 0 100px 20px 100px;
+    display: inline-block;
+    border-bottom: 3px solid;
+}
+/*this part above is general formating for all sections in the main file*/
+
+
+
 /*1st section (what we do) improvements*/
 .intro{
     text-align: center;
 }
 
 /*improve main header in 1st section*/
-.intro h2{
-    font-size: 55px;
-    color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 3px 100px;
-    border-bottom: 3px solid;
+.primary-border{
     border-color: #fce138;
-    display: inline-block;
 }
 
 /*improve p elements in 1st section*/
@@ -166,4 +181,46 @@ section{
     font-size: 20px;
     margin: 0 auto; /*alt solution is css: 'display: inline-block'*/
     /*trick above for horizontal centering only*/
+}
+
+
+
+/*format the 2nd section (What you do)*/
+.steps{
+    text-align: center;
+    background: #fce138;
+}
+
+/*format headings in 2nd section*/
+.secondary-border{
+    border-color: #39a6b2;
+}
+
+/*format divs in 2nd section*/
+.steps div{
+    margin-bottom: 80px;
+}
+
+/*format images in 2nd section*/
+.steps img{
+    width: 15%;
+    margin: 10px 0;
+}
+
+/*format h3 in 2nd section*/
+.steps h3{
+    color: #024e76;
+    font-size: 46px;
+    margin-top: 10px;
+}
+
+/*format p elements in 2nd section*/
+.steps p{
+    color: #39a6b2;
+    font-size: 23px;
+}
+
+/*format fragment of h3 in 2nd section*/
+.steps span{
+    font-size: 30px;
 }
