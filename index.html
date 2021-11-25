@@ -70,13 +70,14 @@
                     </p>
                     
                     <!--confirm for 18+ years-->
-                    <label for= "age">
                         <p> 
-                            I acknowledge that I am at least 18 years of age.
+                            <label for= "age">I acknowledge that I am at least 18 years of age.</label>
                             <input type= "checkbox" name= "age-confirm" id= "age" /> 
-                            <!--moved input in p element in order to align it next to text-->
+                            <!--moved input in p element in order to align it next to text;
+                            it also caused a large margin to appear between "have you worked..." and i acknowledge... 
+                            so I reversed the label and p (label is inside p)-->
                         </p>
-                    </label>
+                    
                     
 
                     <!--submit button-->
@@ -104,39 +105,80 @@
             <!--added 2 for 1 class declaration here for both general formating and specific styling-->
             
             <!--steps 1-4 are seperated by divs-->
+            <!--span is added to h3 to highlight (and potentially improve/add CSS ) part of it-->
             <div>
                 <!--adding step 1 image here-->
                 <img src= "./assets/images/step-1.svg" alt= "" />
-                <h3>Step 1: <span>Fill Out the Form Above</span></h3>
+                <h3>Step 1: <span>Fill Out the Form Above.</span></h3>
                 <p>You're already here, so why not?</p>
             </div>
 
             <div>
                 <!--adding step 2 image here-->
                 <img src= "./assets/images/step-2.svg" alt= "" />
-                <h3>Step 2: <span>Consult with One of our Trainers</span></h3>
+                <h3>Step 2: <span>Consult with One of our Trainers.</span></h3>
                 <p>Are you here to build muscle, lose weight, or just feel good?</p>
             </div>
 
             <div>
                 <!--adding step 3 image here-->
                 <img src="./assets/images/step-3.svg" alt= "" />
-                <h3>Step 3: <span>Get Running</span></h3>
+                <h3>Step 3: <span>Get Running.</span></h3>
                 <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
             </div>
 
             <div>
                 <!--adding step 4 image here-->
                 <img src= "./assets/images/step-4.svg" alt= "" />
-                <h3>Step 4: <span>See Results</span></h3>
-                <p>Bi-Weekly checkins with your trainer will keep you focused.</p>
+                <h3>Step 4: <span>See Results.</span></h3>
+                <p>Bi-weekly checkins with your trainer will keep you focused.</p>
             </div>
         </section>
 
 
         <!--"meet the trainers" section-->
-        <section>
-            <h2>Meet The Trainers</h2>
+        <section id="your-trainers" class="trainers">
+            <h2 class= "section-title primary-border">Meet The Trainers</h2>
+            
+            <!--1st trainer bio-->
+            <article class="trainer">
+                <img src="./assets/images/trainer-1.jpg" 
+                    alt="Arron Stephens in his workout clothes, ready to pump iron" />
+                <div class= "trainer-bio text-left">
+                    <h3>Arron Stephens</h3>
+                    <h4>Speed / Strength</h4>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa laborum voluptates expedita illo amet, 
+                        quisquam eius exercitationem eos perferendis alias labore aliquam, cupiditate at obcaecati maxime eum reprehenderit recusandae illum?
+                    </p>
+                </div>
+            </article>
+            
+            <!--2nd trainer bio-->
+            <article class="trainer">
+                <div class= "trainer-bio text-right">
+                    <h3>Joanna Gill</h3>
+                    <h4>Endurance</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente perferendis amet distinctio, sunt iure modi porro dolores possimus 
+                        ad suscipit culpa enim nostrum nihil similique nobis dignissimos ea aspernatur rem?
+                    </p>
+                </div>
+                <img src= "./assets/images/trainer-2.jpg" alt= "Joanna Gill cooling off after a workout" />
+            </article>
+
+            <!--3rd trainer bio-->
+            <article class="trainer">
+                <img src= "./assets/images/trainer-3.jpg" alt= "Harry Smith wearing a headband and lifting comically small pink weight" />
+                <div class= "trainer-bio text-left">
+                    <h3>Harry "the headband" Smith</h3>
+                    <h4>Strength</h4>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis repellat consequatur dolore sequi 
+                        aspernatur placeat ullam aperiam amet obcaecati nam, autem hic facilis quae atque quis eos laborum minus cumque.
+                    </p>
+                </div>
+            </article>
         </section>
         
 
